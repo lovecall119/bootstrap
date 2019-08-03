@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>YCIU's shop</title>
+</head>
+<style>
+ .btn {
+    border-width: 2px;
+  }
+  .back-black {
+    background-color: rgba(0, 0, 0, .5);
+  }
+  @media (max-width: 768px) { 
+ .back-black-inner {
+      background-color: rgba(0, 0, 0, .3);
+      color: #fff;
+  }
+
+  }
+  .fz-small {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .colorGreen {
+    color: #00cc99;
+  }
+  .header-carousel {
+    height: 450px;
+  }
+  .bg-cover {
+    background-size: cover;
+    background-position: center center;
+  }
+  .carousel-caption {
+  }
+  .background-yellow {
+    background-color: #FFF6AB;
+  }
+  .brown {
+    color: #8A553A;
+  }
+  .
+</style>
+
+<body>
+    <div class="bg-secondary ">
+        <div class="container py-1 d-flex justify-content-end ">
+            <a class="mr-2 colorGreen" href="#"><i class="fa fa-facebook-official"></i></a>
+            <a class="mr-3 colorGreen" href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">首頁</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">主打 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            其他飾品
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">耳環</a>
+                            <a class="dropdown-item" href="#">項鍊</a>
+                            <a class="dropdown-item" href="#">其他代購</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto">
+                    <a href="#" class="btn btn-outline-light mr-2 btn-sm"
+                    data-toggle="modal" data-target="#sign-up"
+                     >註冊</a>
+                    <a href="#" class="btn btn-outline-light btn-sm" 
+                    data-toggle="modal" data-target="#sign-in"
+                    >登入</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <header>
+        <div class="container-fliud">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item  header-carousel bg-cover active" style="background-image: url(https://images.unsplash.com/photo-1531995811006-35cb42e1a022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)">
+                        <div class="carousel-caption back-black d-none d-md-block px-4">
+                            <h5>因愛而生、刻劃永恆</h5>
+                            <p>提供由設計開始、全程個人化的珠寶訂製。另外，也提供各式風格及設計戒指可直接挑選，讓每一種愛，都能化為永恆存在。</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item header-carousel bg-cover" style="background-image: url(https://images.unsplash.com/photo-1551947391-249dcb8ed976?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)">
+                        <div class="carousel-caption back-black d-none d-md-block px-4 ">
+                            <h5>輕珠寶</h5>
+                            <p>我的耳朵、頸項、手腕、手指，無不閃耀著專屬的強烈風格。 用飾品，訴說自己的態度。 </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item header-carousel bg-cover" style="background-image: url(https://images.unsplash.com/photo-1536502829567-baf877a670b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)">
+                        <div class="carousel-caption d-none d-md-block px-4">
+                            <h5>品牌工藝</h5>
+                            <p>結合國際級3D繪製及校對技術，再交由專業嚴謹的金工師傅手工打造， 每一個刻劃，都專屬於您。</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="bg-light ">
+        <div class="container py-3 brown">
+            <div class="row ">
+                <div class="col-12 col-md-4  ">
+                    <i class="fa fa-diamond fa-5x "></i>
+                    <h3>完美鑽石</h3>
+                    <p>每一顆SILUBR的鑽石, 都是GIA國際認證、八心八箭高品質。 超完美！如同您的心意。</p>
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <i class="fa fa-diamond fa-5x "></i>
+                    <h3>故事訂製</h3>
+                    <p>業界首創「故事訂製」服務，我們相信，最好的珠寶設計，源於您關於愛的故事與心情。</p>
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <i class="fa fa-diamond fa-5x "></i>
+                    <h3>暖心規劃</h3>
+                    <p>我們提供完整的售前說明及售後服務， 確保每一份不同的預算，都能在SILUBR找到您喜愛的珠寶。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg-light py-5" style="position: relative;">
+        <div class="row">
+            <div class="col-md-5 bg-cover" style="
+        position: absolute; top: 0; bottom: 0;
+        background-image: url(https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)">
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row justify-content-end ">
+                <div class="col-md-7 back-black-inner">
+                    <h3>幸福滿分</h3>
+                    <p>一次購買鑽戒、對戒、三件組18K金商品，享18K金鑽戒免費升級PT950鉑金，再送3分鑽石項鍊，現金價即享95折優惠。(每月限5名額，送完為止)
+                    </p>
+                    <button class="btn btn-outline-success px-2 py-1">查看更多</button>
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <h4>首次鑑賞禮</h4>
+                            <p>凡首次鑑賞即購買對戒或鑽戒，即送鑽石水晶對戒盒。(每月限5名額，送完為止)</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>線上購買</h4>
+                            <p>更多戒指風格、鑽石設計可至SILUBR線上商店進行選購</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <h3 class="text-center">如何這麼精緻</h3>
+            <div class="row mt-3">
+                <div class="col-md-6 ">
+                    <div class="d-flex">
+                        <div>
+                            <i class="fa fa-smile-o fa-4x mr-3"></i>
+                        </div>
+                        <div>
+                            <h4>故事訂製</h4>
+                            <p>業界首創「故事訂製」服務，我們相信，最好的珠寶設計，源於您關於愛的故事與心情。 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="d-flex">
+                        <div>
+                            <i class="fa fa-smile-o fa-4x mr-3"></i>
+                        </div>
+                        <div>
+                            <h4>完美鑽石</h4>
+                            <p>每一顆SILUBR的鑽石， 都是GIA國際認證、八心八箭高品質。 超完美！如同您的心意。 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 ">
+                    <div class="d-flex">
+                        <div>
+                            <i class="fa fa-smile-o fa-4x mr-3"></i>
+                        </div>
+                        <div>
+                            <h4>品牌工藝</h4>
+                            <p>結合國際級3D繪製及校對技術，再交由專業嚴謹的金工師傅手工打造， 每一個刻劃，都專屬於您。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="d-flex">
+                        <div>
+                            <i class="fa fa-smile-o fa-4x mr-3"></i>
+                        </div>
+                        <div>
+                            <h4>暖心規劃</h4>
+                            <p>我們提供完整的售前說明及售後服務， 確保每一份不同的預算，都能在SILUBR找到您喜愛的珠寶。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg-light py-5" style="position: relative;">
+        <div class="row justify-content-end">
+            <div class="col-md-4 bg-cover" style="
+        position: absolute; top: 0; bottom: 0 ;
+        background-image: url(https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)">
+            </div>
+            <div class="container">
+                <div class="col-md-8">
+                    <h3>隨時隨地保持美麗</h3>
+                    <dl class="row">
+                        <dt class="col-sm-3">Tiffany Paper Flowers</dt>
+                        <dd class="col-sm-9">當幻想與工藝交融，想像有如繁花綻放，呈現自然界的時尚。以花瓣的抽象意念為靈感，透過圓形明亮式切割的白鑽、稀有的黃鑽及光彩奪目的丹泉石為女性氣質賦予全新生命。</dd>
+                        <dt class="col-sm-3 mt-2">Tiffany Metro</dt>
+                        <dd class="col-sm-9 mt-2">
+                            <p>奪目。流暢。珠寶設計和上乘工藝的完美融合。 </p>
+                        </dd>
+                        <dt class="col-sm-3 mt-2">Tiffany 承諾</dt>
+                        <dd class="col-sm-9 mt-2">
+                            <p>自近兩世紀前創立以來，Tiffany & Co. 一直致力達致客戶關懷及滿意度的最高標準。 </p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14471.038199094362!2d121.24243546977539!3d24.940259950000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346822695ba82b0d%3A0xa64bad4fe99d1b89!2z5a625qiC56aP5Lit5aOi5bqXQ2FycmVmb3VyIENodW5nIExpIFN0b3Jl!5e0!3m2!1szh-TW!2stw!4v1563288911951!5m2!1szh-TW!2stw" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group ">
+                            <label for="username">姓名 *</label>
+                            <input type="text" class="form-control form-control-sm" id="username" placeholder="請輸入姓名" required>
+                            <div class="valid-feedback">
+                                做得好!
+                            </div>
+                            <div class="invalid-feedback">
+                                請輸入姓名!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="userphone">電話 *</label>
+                            <input type="tel" class="form-control form-control-sm" id="userphone" placeholder="請輸入電話" required>
+                            <div class="valid-feedback">
+                                做得好!
+                            </div>
+                            <div class="invalid-feedback">
+                                請輸入電話!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="usermail">email *</label>
+                            <input type="email" class="form-control form-control-sm" id="usermail" placeholder="請輸入信箱" required>
+                            <div class="valid-feedback">
+                                做得好!
+                            </div>
+                            <div class="invalid-feedback">
+                                請輸入信箱!
+                            </div>
+                        </div>
+                        <div class="form-group mb-1">
+                            <label for="useraddress">住址 *</label>
+                            <input type="text" class="form-control form-control-sm" id="useraddress" placeholder="請輸入住址" required>
+                            <div class="valid-feedback">
+                                做得好!
+                            </div>
+                            <div class="invalid-feedback">
+                                請輸入住址!
+                            </div>
+                        </div>
+                        <small>
+                            <p class="mb-0 fz-small">是否需要發票</p>
+                        </small>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <div class="custom-control custom-radio mt-0 pt-0">
+                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label fz-small" for="customRadio1">是</label>
+                                </div>
+                                <div class="custom-control custom-radio ">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input ">
+                                    <label class="custom-control-label fz-small" for="customRadio2">不需要</label>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <button type="submit" class="btn btn-outline-info btn-sm">送出</button>
+                                <button type="button" class="btn btn-danger btn-sm">取消</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+    </script>
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 p-4 pl-5 bg-cover" style="background-image: url(https://images.unsplash.com/photo-1547452661-90c6d131d478?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)">
+          <div class="row">
+            <div class="col-sm-9">
+              <small>Our Speciality 01</small>
+              <h3>Design</h3>
+              <p class="text-dark fz-small">
+                我們深信戒指設計能展現出愛情美麗的樣貌，以及每段故事中最具獨特的情感狀態。我們擁有最多元的婚戒概念設計，囊括原創品牌設計，獨有的德國工藝客製婚戒，日本CITIZEN專屬對戒，同時兼具簡約、經典、時尚風格搭配，透過自由挑選，定義出屬於個人的幸福主張。
+              </p>
+              <a href="#" class="btn btn-sm btn-outline-secondary">了解更多</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 p-4 bg-cover"style="background-image: url(https://images.unsplash.com/photo-1513551068-5295f14d4ab4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)">
+          <div class="row">
+            <div class="col-sm-9 text-white">
+              <small>Our Speciality 02</small>
+              <h3>Quality</h3>
+              <p class="fz-small">
+                重視每顆鑽石的品質，從源頭篩選，確實做好把關，嚴選最完美的原石，以絕倫的車磨工法，展現鑽石的極致光澤，是我們引以為傲的特色。內部制定嚴謹的標準規範，由專人嚴格進行商品標準品管。我們只提供符合國際GIA鑑定等級的鑽石，在擁有國際認證的同時，即能獲得最好的保障。
+              </p>
+              <a href="#" class="btn btn-sm btn-outline-light ">了解更多</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+
+    <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-light py-2">
+            <h5 class="modal-title" id="exampleModalLongTitle">註冊</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti in voluptatibus omnis dolorem voluptas, ullam recusandae asperiores. Sed sequi recusandae beatae, illum ad, tempora, doloremque, similique ullam ut dignissimos earum! Id magnam ullam facilis tenetur similique officia sint, saepe placeat expedita error ut. Repellendus facere eius totam quibusdam sint at repellat. Aliquid est explicabo iure, tempora dolore omnis exercitationem consequuntur maxime ex reprehenderit beatae, quaerat adipisci quis similique minus aspernatur deserunt odit provident id. Recusandae quaerat, cumque molestias excepturi tempora quas impedit vitae reiciendis, qui, deleniti ab soluta unde beatae error ex earum neque, laudantium minima fugit veritatis vel rerum!</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" data-dismiss="modal" class="mr-auto fz-small pt-2" data-toggle="modal" data-target="#sign-in" >切換到登入</a>
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-light py-2">
+            <h5 class="modal-title" id="exampleModalLongTitle">登入</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <a href="#" data-dismiss="modal" class="mr-auto fz-small pt-2" data-toggle="modal" data-target="#sign-up" >還沒有帳號?</a>
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+
+        console.log('123');
+        $('a[data-dismiss="modal"][data-toggle="modal"]').on('click', function(){
+          console.log('click');
+          var target1 = $(this).data('target');
+          console.log('target:',target1);
+          $(target1).on('shown.bs.modal', function () {
+            $('body').addClass('modal-open');
+          })
+        });
+
+        // <a href="#" data-dismiss="modal" class="mr-auto fz-small pt-2" data-toggle="modal" data-target="#sign-up" >還沒有帳號?</a>
+
+
+
+      })
+    </script>
+</body>
+
+</html>
