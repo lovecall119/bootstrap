@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b0b4b3096e.js"></script>
+    <title>購物網站demo</title>
+</head>
+<style>
+html {
+    font-size: 17px;
+}
+
+.button-noback {
+    background-color: transparent;
+}
+
+.button-border {
+    border: none;
+}
+
+.btn-cart {
+    position: relative;
+}
+
+.btn-cart .badge {
+    position: absolute;
+    top: 35px;
+    right: -10px;
+}
+
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
+.jumbotron-bg {
+    background-image: url('https://images.unsplash.com/photo-1565240451521-77ef5837f940?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+}
+
+.bg-cover {
+    background-color: rgba(255, 255, 255, .65);
+}
+
+.text-color-green {
+    color: #41D757;
+}
+
+.txt-denone {
+    text-decoration: none;
+}
+
+.box-shadow {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .16);
+    transition: box-shadow .5s;
+}
+
+.box-shadow:hover {
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, .24);
+}
+</style>
+
+<body>
+    <header>
+        <nav class="nav bg-light">
+            <div class="container-fluid d-flex">
+                <a class="nav-link active text-dark" href="#"><i class="fa fa-diamond text-success"></i> 跳樓大拍賣</a>
+                <div class="ml-auto btn-cart">
+                    <a href="#" class="btn btn-sm btn-outline-secondary" role="button" id="cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-shopping-cart fa-2x"></i>
+                        <span class="badge badge-pill badge-danger">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" style="min-width: 400px;">
+                        <div class="px-4 py-3">
+                            <table class="table">
+                                <h6>已選擇商品</h6>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                        <td>金色西裝</td>
+                                        <td>一件</td>
+                                        <td>$520</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                        <td>銀色西裝</td>
+                                        <td>兩件</td>
+                                        <td>$520</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                        <td>橘色色西裝</td>
+                                        <td>一件</td>
+                                        <td>$520</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="btn btn-success w-100">結帳</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+        <div class="container bg-cover">
+            <h1 class="display-4 text-center">Lorem ipsum dolor sit amet.</h1>
+            <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, fugit.</p>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group sticky-top mb-5" style="top: 30px;">
+                    <a href="#pane-1" class="list-group-item list-group-item-action active" data-toggle="list" role="tab">
+                        <i class="fas fa-tshirt mr-3"></i>page1
+                    </a>
+                    <a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list" role="tab">
+                        <i class="fab fa-redhat mr-3"></i>page2
+                    </a>
+                    <a href="#pane-3" class="list-group-item list-group-item-action" data-toggle="list" role="tab">
+                        <i class="far fa-clock mr-3"></i>page3
+                    </a>
+                    <a href="#pane-4" class="list-group-item list-group-item-action" data-toggle="list" role="tab">
+                        <i class="fas fa-gamepad mr-3"></i>page4
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <!-- pane1 -->
+                    <div class="tab-pane active" id="pane-1" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer bg-white border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="購物網站-products.html" class="btn btn-outline-secondary">S</a>
+                                            <a href="購物網站-products.html" class="btn btn-outline-secondary">M</a>
+                                            <a href="購物網站-products.html" class="btn btn-outline-secondary disabled">L</a>
+                                            <a href="購物網站-products.html" class="btn btn-outline-secondary">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1503340588524-222d094c7066?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary disabled">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary disabled">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1561748152-7301bfdb8556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1556970877-472161430f51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1503341733017-1901578f9f1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pane2 -->
+                    <div class="tab-pane" id="pane-2" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary disabled">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1523380744952-b7e00e6e2ffa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1542394613-26460f1f378c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary disabled">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1514642837906-76ed4698ec34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1523480773376-9d46ea986a7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary disabled">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary disabled">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pane3 -->
+                    <div class="tab-pane" id="pane-3" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1497382706140-605ee76b3b55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-light">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-light">white</a>
+                                            <a href="#" class="btn btn-dark">black</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-light">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-light">white</a>
+                                            <a href="#" class="btn btn-dark">black</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-light">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-light">white</a>
+                                            <a href="#" class="btn btn-dark">black</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-light">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-light">white</a>
+                                            <a href="#" class="btn btn-dark">black</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1495857000853-fe46c8aefc30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-light">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-light">white</a>
+                                            <a href="#" class="btn btn-dark">black</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1490915785914-0af2806c22b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-light">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-light">white</a>
+                                            <a href="#" class="btn btn-dark">black</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- pane4 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                    <div class="tab-pane" id="pane-4" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1492044715545-15ddedd84e5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 1</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1538895194639-f50554a2ca24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 3</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1539781898430-75f784e4f1af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 4</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1531594835867-65b60cc9e4ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 5</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1493496553793-56c1aa2cfcea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 6</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1531525797753-909788106ccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 7</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4 ">
+                                <div class="card h-100 border-0  text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 7</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 mb-3 text-center box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1531525727990-67532cd332c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 7</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">M</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary ">L</a href="#">
+                                            <a href="#" class="btn btn-outline-secondary">XL</a href="#">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="py-4 bg-light text-center text-color-green">
+        <p>
+            &copy; copyright by yuan &ensp;
+            <a href="#" style="text-decoration: none;"><i class="fab fa-instagram"></i></i>&ensp;&ensp;</a>
+            <a href="#" style="text-decoration: none;"><i class="fab fa-facebook-square"></i></i>&ensp;&ensp;</a>
+            <a href="#" style="text-decoration: none;">about</a>&ensp;
+        </p>
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

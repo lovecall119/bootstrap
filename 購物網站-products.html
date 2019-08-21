@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b0b4b3096e.js"></script>
+    <title>購物網站demo</title>
+</head>
+<style>
+    html {
+    font-size: 17px;
+}
+
+.button-noback {
+    background-color: transparent;
+}
+
+.button-border {
+    border: none;
+}
+
+.btn-cart {
+    position: relative;
+}
+
+.btn-cart .badge {
+    position: absolute;
+    top: 35px;
+    right: -10px;
+}
+
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
+.jumbotron-bg {
+    background-image: url('https://images.unsplash.com/photo-1565240451521-77ef5837f940?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+}
+
+.bg-cover {
+    background-color: rgba(255, 255, 255, .65);
+}
+
+.text-color-green {
+    color: #41D757;
+}
+
+.txt-denone {
+    text-decoration: none;
+}
+
+.box-shadow {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .16);
+    transition: box-shadow .5s;
+}
+
+.box-shadow:hover {
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, .24);
+}
+.btn.disabled {
+    pointer-events: none;
+}
+</style>
+
+<body>
+    <header>
+        <nav class="nav bg-light">
+            <div class="container-fluid d-flex">
+                <a class="nav-link active text-dark" href="#"><i class="fa fa-diamond text-success"></i> 跳樓大拍賣</a>
+                <div class="ml-auto btn-cart">
+                    <a href="#" class="btn btn-sm btn-outline-secondary" role="button" id="cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-shopping-cart fa-2x"></i>
+                        <span class="badge badge-pill badge-danger">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" style="min-width: 400px;">
+                        <div class="px-4 py-3">
+                            <table class="table">
+                                <h6>已選擇商品</h6>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                        <td>金色西裝</td>
+                                        <td>一件</td>
+                                        <td>$520</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                        <td>銀色西裝</td>
+                                        <td>兩件</td>
+                                        <td>$520</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                        <td>橘色色西裝</td>
+                                        <td>一件</td>
+                                        <td>$520</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="btn btn-success w-100">結帳</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- banner -->
+    <!-- content -->
+    <div class="container">
+        <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb bg-transparent pl-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="sticky-top" style="top: 30px; z-index: 0;">
+                    <h1 class="h3">T-shirt</h1>
+                    <div class="d-flex justify-content-end align-items-end">
+                        <div>售價 $1250</div>
+                        <span class="ml-auto h3 mb-0 text-danger"><strong>特價 1190</strong></span>
+                    </div>
+                    <hr>
+                    <div class="my-4 ">
+                        <div class="btn-group  btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-secondary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> S
+                            </label>
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> M
+                            </label>
+                            <label class="btn btn-outline-secondary disabled">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> L
+                            </label>
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> XL
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+            <div class="col-md-8">
+                <div>
+                    <p class="h4 ">可水洗、軍人綠、不發臭、好好看！</p>
+                    <p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem aliquid quas tempora, ullam totam!</p>
+                </div>
+                <div>
+                    <p class="h3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, atque.</p>
+                    <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" style="width: 640px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="py-4 mt-3 bg-light text-center text-color-green">
+        <p>
+            &copy; copyright by yuan &ensp;
+            <a href="#" style="text-decoration: none;"><i class="fab fa-instagram"></i></i>&ensp;&ensp;</a>
+            <a href="#" style="text-decoration: none;"><i class="fab fa-facebook-square"></i></i>&ensp;&ensp;</a>
+            <a href="#" style="text-decoration: none;">about</a>&ensp;
+        </p>
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

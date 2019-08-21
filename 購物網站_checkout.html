@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b0b4b3096e.js"></script>
+    <title>購物網站checkout</title>
+</head>
+<style>
+    html {
+    font-size: 17px;
+}
+
+.btn-cart {
+    position: relative;
+}
+
+.btn-cart .badge {
+    position: absolute;
+    right: -5px;
+    top: 35px;
+}
+
+.alert-rounded {
+    border-radius: 50px;
+}
+</style>
+
+<body>
+    <nav class="nav bg-light">
+        <div class="container-fluid d-flex">
+            <a class="nav-link active text-dark" href="#"><i class="fa fa-diamond text-success"></i> 跳樓大拍賣</a>
+            <div class="ml-auto btn-cart">
+                <a href="#" class="btn btn-sm btn-outline-secondary" role="button" id="cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-shopping-cart fa-2x"></i>
+                    <span class="badge badge-pill badge-danger">3</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" style="min-width: 400px;">
+                    <div class="px-4 py-3">
+                        <table class="table">
+                            <h6>已選擇商品</h6>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#"><i class="fa fa-trash-o" data-toggle="modal" data-title="金色西裝" data-target="#deleteModal"></i></a></td>
+                                    <td>金色西裝</td>
+                                    <td>一件</td>
+                                    <td>$520</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><i class="fa fa-trash-o" data-toggle="modal" data-title="銀色西裝" data-target="#deleteModal"></i></a></td>
+                                    <td>銀色西裝</td>
+                                    <td>兩件</td>
+                                    <td>$520</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><i class="fa fa-trash-o" data-toggle="modal" data-title="橘色色西裝" data-target="#deleteModal"></i></a></td>
+                                    <td>橘色色西裝</td>
+                                    <td>一件</td>
+                                    <td>$520</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="btn btn-success w-100">結帳</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="text-center my-3">
+            <h1>結帳頁面</h1>
+        </div>
+        <div class="form-row text-center">
+            <div class="col-sm-12 col-md">
+                <div class="alert alert-success alert-rounded" role="alert">
+                    1. 輸入訂單資料
+                </div>
+            </div>
+            <div class="colsm-12 col-md">
+                <div class="alert alert-light alert-rounded" role="alert">
+                    2. 金流付款
+                </div>
+            </div>
+            <div class="colsm-12 col-md">
+                <div class="alert alert-light alert-rounded" role="alert">
+                    3. 結帳確認
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="container ">
+        <div class="row justify-content-center mt-5">
+            <div class="col-8">
+                <div class="accordion" id="accordionExample"></div>
+                <div class="card">
+                    <div class="card-header border-0 p-1 d-flex align-items-center pr-4" id="headingOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            顯示購物車細節
+                        </button>
+                        <span class="ml-auto">$1560</span>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <table class="table">
+                        <h6>已選擇商品</h6>
+                        <tbody>
+                            <tr>
+                                <td><a href="#"><i class="fa fa-trash-o" data-toggle="modal" data-title="金色西裝" data-target="#deleteModal"></i></a></td>
+                                <td>金色西裝</td>
+                                <td>一件</td>
+                                <td>$520</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#"><i class="fa fa-trash-o" data-toggle="modal" data-title="銀色西裝" data-target="#deleteModal"></i></a></td>
+                                <td>銀色西裝</td>
+                                <td>兩件</td>
+                                <td>$520</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#"><i class="fa fa-trash-o" data-toggle="modal" data-title="橘色色西裝" data-target="#deleteModal"></i></a></td>
+                                <td>橘色色西裝</td>
+                                <td>一件</td>
+                                <td>$520</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-right">總金額</td>
+                                <td>$1560</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+                <div class="alert alert-secondary mt-3" role="alert">
+                    使用者資訊
+                </div>
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">信箱</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                           <div class="valid-feedback">
+                                格式正確
+                            </div>
+                            <div class="invalid-feedback">
+                                格式不正確
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                            <div class="valid-feedback">
+                                格式正確
+                            </div>
+                            <div class="invalid-feedback">
+                                未輸入
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">地址</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="XX市 XX區" required>
+                        <div class="valid-feedback">
+                                格式正確
+                            </div>
+                            <div class="invalid-feedback">
+                                格式不正確
+                            </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">訂貨人姓名</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="王大明" required>
+                            <div class="valid-feedback">
+                                格式正確
+                            </div>
+                            <div class="invalid-feedback">
+                                格式不正確
+                            </div>
+                        </div>
+                        <div class="form-group col-md">
+                            <label for="inputZip">手機號碼</label>
+                            <input type="text" class="form-control" id="inputZip" placeholder="09XXXXXXXX" required>
+                            <div class="valid-feedback">
+                                格式正確
+                            </div>
+                            <div class="invalid-feedback">
+                                格式不正確
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group d-flex" style="display: inline-block">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                            <label class="form-check-label" for="gridCheck">
+                                我已閱讀使用者規範
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary ml-auto btn-disabled" >確認送出</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" data-backdrop="static" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title text-light" id="exampleModalLabel">刪除訂單</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    是否刪除訂單
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">否</button>
+                    <button type="button" class="btn btn-outline-danger">是</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+    <!--///////////////////////////////    JQ  \\\\\\\\\\\\\\\\\\\\\\\\-->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function() {
+        // javascript
+        $('#editModal').on('show.bs.modal', function(event) {
+            var btn = $(event.relatedTarget)
+            var title = btn.data('title')
+            var modal = $(this)
+            modal.find('.modal-title').text(title);
+        });
+        $('#deleteModal').on('show.bs.modal', function(event) {
+            var btn = $(event.relatedTarget)
+            var title = btn.data('title')
+            var modal = $(this)
+            modal.find('.modal-title').text('確認刪除 ' + title)
+        });
+
+        $('a[data-dismiss="modal"][data-toggle="modal"]').on('click', function() {
+            console.log('click');
+            var target1 = $(this).data('target');
+            console.log('target:', target1);
+            $(target1).on('shown.bs.modal', function() {
+                $('body').addClass('modal-open');
+            })
+        });
+
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+
+        // javascript
+    })
+    </script>
+</body>
+
+</html>
